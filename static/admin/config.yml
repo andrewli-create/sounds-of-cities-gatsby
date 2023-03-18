@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: /andrewli-create/sounds-of-cities-gatsby
   branch: main
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
