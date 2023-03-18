@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { com } from '../../templates/composition-page'
+import { CompositionTemplate } from '../../templates/composition'
 
 const CompositionPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(['data', 'tags'])
