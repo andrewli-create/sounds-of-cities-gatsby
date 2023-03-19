@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
-export const CompositionTemplate = ({
+export const ComposerTemplate = ({
   content,
   contentComponent,
   description,
@@ -47,7 +47,7 @@ export const CompositionTemplate = ({
   );
 };
 
-CompositionTemplate.propTypes = {
+ComposerTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -60,7 +60,7 @@ const BlogPost = ({ data }) => {
 
   return (
     <Layout>
-      <CompositionTemplate
+      <ComposerTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}

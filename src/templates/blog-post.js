@@ -16,7 +16,7 @@ export const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
-  // console.log(content);
+  console.log(helmet);
   return (
     <section className="section">
       {helmet || ""}
@@ -102,3 +102,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+console.log(pageQuery);

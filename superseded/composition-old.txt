@@ -55,41 +55,42 @@ CompositionTemplate.propTypes = {
   helmet: PropTypes.object,
 };
 
-const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data;
+const Composition = ({ data }) => {
+  console.log("data", data);
+  const { markdownRemark: composition } = data;
 
   return (
     <Layout>
       <CompositionTemplate
-        content={post.html}
+        content={composition.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
+        description={composition.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
+          <Helmet titleTemplate="%s | Composition">
+            <title>{`${composition.frontmatter.title}`}</title>
             <meta
               name="description"
-              content={`${post.frontmatter.description}`}
+              content={`${composition.frontmatter.description}`}
             />
           </Helmet>
         }
-        tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
+        tags={composition.frontmatter.tags}
+        title={composition.frontmatter.title}
       />
     </Layout>
   );
 };
 
-BlogPost.propTypes = {
+Composition.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 };
 
-export default BlogPost;
+export default CompositionTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query CompositionByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
