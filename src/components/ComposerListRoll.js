@@ -4,28 +4,21 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 import Content, { HTMLContent } from "./Content";
 
-const ComposerRollTemplate = (props) => {
-  
+const ComposerListRollTemplate = (props) => {
   const { edges: posts } = props.data.allMarkdownRemark;
-  console.log("composer", posts);
   return (
-    <div className="col-md-12">
+    <div>
       {posts &&
         posts.map(({ node: post }) => (
-          <div className="composer-block" key={post.id}>
-            <ComposerContent
-              title={post.frontmatter.title}
-              content={post.html}
-              contentComponent={HTMLContent}
-              link={post.fields.slug}
-            />
-          </div>
+          <li className='navbar-dropdown-item' key={post.slug}>
+            <Link to={post.fields.slug}>{post.frontmatter.title.split(' (')[0]}</Link>
+          </li>
         ))}
     </div>
   )
 }
 
-ComposerRoll.propTypes = {
+ComposerListRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -37,17 +30,14 @@ export const ComposerContent = ({
   title,
   content,
   contentComponent,
-  link
 }) => {
   const PostContent = contentComponent || Content;
   console.log(content);
   return (
-    <section className="composer-line">
-      <Link to={link}>
-        <h2>{title}</h2>
-        {/* <PostContent content={content} /> */}
-        <hr/>
-      </Link>
+    <section className="section">
+      <h2>{title}</h2>
+      <PostContent content={content} />
+      <hr/>
     </section>
   );
 };
@@ -58,7 +48,7 @@ ComposerContent.propTypes = {
 };
 
 
-export default function ComposerRoll() {
+export default function ComposerListRoll() {
   return (
     <StaticQuery
       query={graphql`
@@ -96,7 +86,7 @@ export default function ComposerRoll() {
           }
         }
       `}
-      render={(data, count) => <ComposerRollTemplate data={data} count={count} />}
+      render={(data, count) => <ComposerListRollTemplate data={data} count={count} />}
     />
   );
 }

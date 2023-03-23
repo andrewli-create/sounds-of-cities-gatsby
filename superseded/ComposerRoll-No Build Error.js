@@ -17,7 +17,6 @@ const ComposerRollTemplate = (props) => {
               title={post.frontmatter.title}
               content={post.html}
               contentComponent={HTMLContent}
-              link={post.fields.slug}
             />
           </div>
         ))}
@@ -37,17 +36,14 @@ export const ComposerContent = ({
   title,
   content,
   contentComponent,
-  link
 }) => {
   const PostContent = contentComponent || Content;
   console.log(content);
   return (
-    <section className="composer-line">
-      <Link to={link}>
-        <h2>{title}</h2>
-        {/* <PostContent content={content} /> */}
-        <hr/>
-      </Link>
+    <section className="section">
+      <h2>{title}</h2>
+      {/* <PostContent content={content} /> */}
+      <hr/>
     </section>
   );
 };
@@ -80,6 +76,7 @@ export default function ComposerRoll() {
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
                   featuredpost
+                  
                   featuredimage {
                     childImageSharp {
                       gatsbyImageData(

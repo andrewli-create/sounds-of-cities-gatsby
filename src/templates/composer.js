@@ -13,37 +13,54 @@ export const ComposerTemplate = ({
   description,
   tags,
   title,
+  profileImage,
+  coverImage,
+  composition,
+  instrumentation,
+  website,
+  socialMediaA,
+  socialMediaB,
+  socialHandleA,
+  socialHandleB,
+  bio,
+  programmeNotes,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
-  console.log(content);
+  console.log(programmeNotes);
   return (
-    <section className="section">
-      {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+    <div>
+      <div className="cover-image image-cover" style={{backgroundImage: `url(${coverImage.childImageSharp.gatsbyImageData.images.fallback.src})`}}>
+        <div className="profile-image image-cover" style={{backgroundImage: `url(${profileImage.childImageSharp.gatsbyImageData.images.fallback.src})`}}></div>
+      </div>
+      <div className="container profile-content">
+        <div className="col-md-12">
+          <h1>{title}</h1>
+          <h3>Composition | <span className="bold-text">{composition}</span></h3>
+          <h3>Instrumentation | <span className="bold-text">{instrumentation}</span></h3>
+          <h3><Link to={website}> {website}</Link></h3>
+          {socialHandleA
+            ? 
+            <h3>
+              <Link to={socialMediaA}>{socialHandleA}</Link>
+              {socialMediaB != '-'
+                ? <Link to={socialMediaB}> | {socialHandleB}</Link>
+                : ''
+              }
+            </h3>
+            : ''
+          }
+          <hr/>
+          <div className="profile-content-wrapper">
+            <h3 className="subtitle">Bio</h3>
+            <p className="paragraph">{bio}</p>
+            <br/>
+            <h3 className="subtitle">Programme Notes</h3>
+            <p className="paragraph">{programmeNotes}</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
@@ -52,6 +69,17 @@ ComposerTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  profileImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  coverImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  composition: PropTypes.string,
+  instrumentation: PropTypes.string,
+  website: PropTypes.string,
+  socialMediaA: PropTypes.string,
+  socialMediaB: PropTypes.string,
+  socialHandleA: PropTypes.string,
+  socialHandleB: PropTypes.string,
+  bio: PropTypes.string,
+  programmeNotes: PropTypes.string,
   helmet: PropTypes.object,
 };
 
@@ -64,6 +92,17 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        profileImage={post.frontmatter.profileImage}
+        coverImage={post.frontmatter.coverImage}
+        composition={post.frontmatter.composition}
+        instrumentation={post.frontmatter.instrumentation}
+        website={post.frontmatter.website}
+        socialMediaA={post.frontmatter.socialMediaA}
+        socialMediaB={post.frontmatter.socialMediaB}
+        socialHandleA={post.frontmatter.socialHandleA}
+        socialHandleB={post.frontmatter.socialHandleB}
+        bio={post.frontmatter.bio}
+        programmeNotes={post.frontmatter.programmeNotes}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -94,6 +133,25 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        profileImage {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
+        coverImage {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
+        composition
+        instrumentation
+        website
+        socialMediaA
+        socialMediaB
+        socialHandleA
+        socialHandleB
+        bio
+        programmeNotes
         date(formatString: "MMMM DD, YYYY")
         title
         description

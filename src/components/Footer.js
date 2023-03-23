@@ -11,7 +11,7 @@ const Footer = () => {
   
     return (
       <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
+        {/* <div className="content has-text-centered">
           <img
             src={logo}
             alt="Kaldi"
@@ -106,7 +106,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </footer>
     );
 };
