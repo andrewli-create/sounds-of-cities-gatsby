@@ -9,15 +9,16 @@ const ComposerRollTemplate = (props) => {
   const { edges: posts } = props.data.allMarkdownRemark;
   console.log("composer", posts);
   return (
-    <div className="col-md-12">
+    <div className="row">
       {posts &&
         posts.map(({ node: post }) => (
-          <div className="composer-block" key={post.id}>
+          <div className="composer-block col-md-4" key={post.id}>
             <ComposerContent
               title={post.frontmatter.title}
               content={post.html}
               contentComponent={HTMLContent}
               link={post.fields.slug}
+              profileImage={post.frontmatter.profileImage.childImageSharp.gatsbyImageData.images.fallback.src}
             />
           </div>
         ))}
@@ -37,24 +38,33 @@ export const ComposerContent = ({
   title,
   content,
   contentComponent,
-  link
+  link,
+  profileImage
 }) => {
   const PostContent = contentComponent || Content;
   console.log(content);
   return (
-    <section className="composer-line">
-      <Link to={link}>
-        <h2>{title}</h2>
-        {/* <PostContent content={content} /> */}
-        <hr/>
+    <div>
+      <Link className='no-style-link' to={link}>
+        <h2 className='composer-title'>{title}</h2>
+        <div className="composer-preview-image image-cover" style={{backgroundImage: `url(${profileImage})`}}></div>
       </Link>
-    </section>
+    </div>
+    // <section className="composer-line">
+    //   <Link to={link}>
+    //     <h2>{title}</h2>
+    //     <div className="profile-image image-cover" style={{backgroundImage: `url(${profileImage})`}}></div>
+    //     {/* <PostContent content={content} /> */}
+    //     <hr/>
+    //   </Link>
+    // </section>
   );
 };
 ComposerContent.propTypes = {
   title: PropTypes.string,
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
+  profileImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 
 
@@ -62,9 +72,9 @@ export default function ComposerRoll() {
   return (
     <StaticQuery
       query={graphql`
-        query ComposerRollQuery {
+        query ComposerRollNewQuery {
           allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
+            sort: { order: ASC, fields: [frontmatter___sequence] }
             filter: { frontmatter: { templateKey: { eq: "composer" } } }
           ) {
             edges {
@@ -80,12 +90,12 @@ export default function ComposerRoll() {
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
                   featuredpost
-                  featuredimage {
+                  profileImage {
                     childImageSharp {
                       gatsbyImageData(
                         width: 120
                         quality: 100
-                        layout: CONSTRAINED
+                        layout: FULL_WIDTH
                       )
 
                     }

@@ -5,8 +5,9 @@
   src: url('../fonts/Raleway-VariableFont_wght.ttf')
 
 $black: rgba(20, 20, 20, 1)
+$grey: rgba(80, 80, 80, 1)
 $white: rgba(255, 255, 255, 1)
-$white-transluscent: rgba(255, 255, 255, 0.8)
+$white-transluscent: rgba(255, 255, 255, 0.9)
 $theme-color: rgb(224, 233, 236)
 
 *
@@ -52,23 +53,31 @@ $theme-color: rgb(224, 233, 236)
   justify-content: space-between
 
 .navbar-item
+  position: relative
   padding: 5px 10px 5px 10px
 
 .navbar ul .navbar-dropdown-item
   padding: 5px 15px
   text-align: center
+  border-bottom: 1px dotted $grey
 
 .navbar ul .navbar-dropdown-item a
   font-size: 0.9em
 
 .navbar-dropdown
+  min-width: 200px
+  right: 50%
+  position: absolute
+  transform: translateX(-50%)
   display: none
-  position: fixed
+  // position: fixed
   margin: 0
   padding: 0 !important
   background-color: $white-transluscent
   z-index: 1
-  transform: translate(-20%)
+  // transform: translate(-20%)
+  border-top: none !important
+  overflow: hidden
 
 .navbar-dropdown>div:nth-child(1)
   padding-top: 35px
@@ -182,11 +191,43 @@ hr
   margin: auto
   max-width: 800px
   padding-bottom: 100px
+
 .subtitle
   font-size: 1.2em
   font-weight: bold
 .paragraph
   white-space: pre-wrap
+
+.others-section 
+  width: 100%
+  height: 50px
+  padding-bottom: 70px
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.others-section>a
+  border-radius: 1000px
+  padding: 10px 25px
+  border: $black solid 1px
+  width: auto
+  margin: auto
+  display: block
+  font-weight: bold
+.composer-block
+  margin-bottom: 30px
+
+.composer-block>div
+  transition-duration: 250ms
+
+.composer-block>div:hover
+  opacity: 0.8
+  filter: brightness(1.1)
+  transform: scale(1.005)
+
+.composer-preview-image
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px
+  height: 300px
 
 .composer-title
   background-color: rgba(0, 0, 0, 0.1)
@@ -195,9 +236,19 @@ hr
   width: auto
   display: inline-block
   padding: 10px 35px
+  min-height: 60px
+  font-weight: bold
 
 .composer-line
   padding: 10px
+
+
+.no-style-link
+  text-decoration: none
+  color: $black
+
+.no-style-link:hover
+  color: $grey
   // // Config vars
 // // Kaldi logo brand color: #FD461E
 // $kaldi-red: #D64000

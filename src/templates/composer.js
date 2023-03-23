@@ -60,6 +60,9 @@ export const ComposerTemplate = ({
           </div>
         </div>
       </div>
+      <div className="others-section">
+        <Link className="no-style-link" to={'/composer'}>See other Composers</Link>
+      </div>
     </div>
   );
 };
