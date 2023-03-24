@@ -16,7 +16,11 @@ programmeNotes: >-
   1967), a controversial modernist and iconoclast.
 
 
+
+
   The poem is generally interpreted as an icon of feminist poetry by Iranians. Now, more than ever, we need to stand in solidarity with the women and people of Iran who want a fair and just future with freedom of choice. We must not remain silent in the face of oppression and challenge the status quo.
+
+
 
 
   Charsu (translated as "Four Directions" in Farsi) is a quartet of classical contemporary that has a focus on the developments of new works, and the support of existing works by living composers, especially Iranian composers composing in diaspora.
