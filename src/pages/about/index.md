@@ -13,13 +13,14 @@ Dolby Atmos has reinvented how entertainment is created and experienced, allowin
 
 If you have your home theatre setup, you can enjoy the music with your surround speakers setup. You can also enjoy the music with a stereo speakers setup or listen to the music in binaural format through your headphones.
 
-Date: March 29, 2023
+The Sounds of Cities<br>
+Music Technology & Digital Media Final Project<br>
+Dolby Atmos Music Album Physical Listening Session<br>
+Produced by Fish Yu<br>
 
-Time: 19:30 (EDT) 
+Date: March 29, 2023<br>Time: 19:30 (EDT) <br>Location: Room 330,<br>Faculty of Music, University of Toronto <br>7.1 surround speaker setup for this listening session
 
-Location: Room 330, Faculty of Music, University of Toronto 
-
-7.1 surround speaker setup for this listening session
+<br>
 
 Featured Music & Composers:
 
