@@ -53,6 +53,7 @@ export const ComposerContent = ({
 }) => {
   const PostContent = contentComponent || Content;
   console.log(content);
+  console.log("youTubeLink", youTubeLink);
   return (
     <div className='composition-line'>
       <Link className='composition-wrapper no-style-link' to={link}>

@@ -5,8 +5,8 @@ sequence: 9
 composer: Fish Yu
 instrumentation: Symphony Orchestra and Electronics
 albumArt: /img/rainbow-crow-copy.jpeg
-youTubeLink: https://www.facebook.com/yahoo.yutl/
-spotifyLink: https://www.facebook.com/yahoo.yutl/
+youTubeLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
 programmeNotes: >-
   After a long period of cold weather, the animals of the community become
   worried. They decide to send a messenger to the Great Sky Spirit to ask for

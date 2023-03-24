@@ -5,8 +5,8 @@ sequence: 5
 composer: Kelvin Lee
 instrumentation: Orchestra, Piano and Electronics
 albumArt: /img/kairos_artwork.jpeg
-youTubeLink: text
-spotifyLink: text
+youTubeLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
 programmeNotes: The film, ‘Kairos’ is a movie about making the right choice at
   the right moment. At the movie, the director,Jean Ho, was trying to discuss
   what is the suitable choice in different circumstances. As a film composer, my

@@ -5,8 +5,8 @@ sequence: 6
 composer: Parisa Sabet
 instrumentation: Electronics Music
 albumArt: /img/screen-shot-2023-03-23-at-1.38.52-am.png
-youTubeLink: https://www.youtube.com/@parisasabetcomposersoundartist/playlists
-spotifyLink: https://www.youtube.com/@parisasabetcomposersoundartist/playlists
+youTubeLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
 programmeNotes: >-
   Reflecting on silence as a response in the face of discrimination and
   oppression, the chamber quartet Charsu is collaborating with composer Parisa

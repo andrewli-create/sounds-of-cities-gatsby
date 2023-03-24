@@ -1,12 +1,12 @@
 ---
 templateKey: composition
-title: Lone Howl
+title: Lone Howls
 sequence: 2
 composer: Alvin Chu
 instrumentation: Chinese Ensemble
 albumArt: /img/a17p0791.jpeg
-youTubeLink: text
-spotifyLink: text
+youTubeLink: https://www.youtube.com/embed/dQw4w9WgXcQ
+spotifyLink: https://www.youtube.com/embed/dQw4w9WgXcQ
 programmeNotes: >-
   “And the scent of orchid musk lingers still,
 
@@ -27,4 +27,5 @@ programmeNotes: >-
 
 
   I say she is an apparition of Guanyin, contemplating moonlight in water.”
+notUsed: NotUsed
 ---

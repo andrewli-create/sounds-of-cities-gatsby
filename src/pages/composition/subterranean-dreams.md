@@ -5,8 +5,8 @@ sequence: 8
 composer: Stephen Morris
 instrumentation: Six Percussionists
 albumArt: /img/img-20230122-wa0010.jpg
-youTubeLink: link
-spotifyLink: link
+youTubeLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
 programmeNotes: Subterranean Dreams is a piece of music which expresses a series
   of dreams that take place in underground cities. The work is written for the
   University of Toronto Percussion Ensemble, who I am lucky to be the composer

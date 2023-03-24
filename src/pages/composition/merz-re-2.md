@@ -5,8 +5,8 @@ sequence: 4
 composer: Nolan Hildebrand
 instrumentation: Electronics
 albumArt: /img/merzbau.jpeg
-youTubeLink: You
-spotifyLink: You
+youTubeLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
 programmeNotes: 'Merz Re \[#2] was written for Fish Yu’s Dolby Atmos project
   entitled The Sounds of Cities. Merz Re \[#2] is the second work in a series of
   acousmatic pieces inspired by dada artist Kurt Schwitters and his concept of

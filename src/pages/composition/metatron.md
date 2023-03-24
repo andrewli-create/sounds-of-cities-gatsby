@@ -5,8 +5,8 @@ sequence: 1
 composer: Eliot Britton
 instrumentation: Percussion Ensemble, Synthesizers and Electronics
 albumArt: /img/vintage-synth.jpg
-youTubeLink: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-spotifyLink: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+youTubeLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
 programmeNotes: >-
   “I never really played what was written, just looked at the melody and made it
   up as I went along”, said Gran, referring her loose interpretations of the
