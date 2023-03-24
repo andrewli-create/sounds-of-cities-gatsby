@@ -7,7 +7,7 @@ coverImage: /img/vintage-synth.jpg
 sequence: 1
 composition: Metatron
 instrumentation: For Percussion Ensemble, Synthesizers and Electronics
-website: www.ebritton.com
+website: https://www.ebritton.com
 socialMediaA: https://www.instagram.com/eliotbritton/
 socialMediaB: "-"
 socialHandleA: "@eliotbritton"
