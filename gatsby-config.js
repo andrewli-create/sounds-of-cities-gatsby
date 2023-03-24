@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
+    title: "Sounds of Cities",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "The Sounds of Cities is a 80-minutes long Dolby Atmos Music Album that includes music from 9 living composers who compose music in different genres and styles. Inspired by the elements of a city that are everywhere in the surrounding, I am doing a Dolby Atmos mix for the music in this album to provide an immersive hearing experience to the audience, just like the audience is walking on the street, talking the subway or watching a movie in a theatre.",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

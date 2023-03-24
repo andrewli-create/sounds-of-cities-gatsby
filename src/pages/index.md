@@ -1,9 +1,7 @@
 ---
-templateKey: index-page
-title: Great coffee with a conscience
-image: /img/album_art.jpeg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
+templateKey: index-page
 mainpitch:
   title: Why Kaldi
   description: >
@@ -46,24 +44,25 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+title: Great coffee with a conscience
 gallery:
-  - image: /img/vintage-synth.jpg
+  - image: /img/img1.jpg
     altText: image-1
-  - image: /img/a17p0791.jpeg
+  - image: /img/img2.jpg
     altText: image-2
-  - image: /img/breathing-room.png
+  - image: /img/img3.jpg
     altText: image-3
-  - image: /img/merzbau.jpeg
+  - image: /img/img5.jpg
     altText: image-4
-  - image: /img/kairos_artwork.jpeg
+  - image: /img/img6.jpg
     altText: album image
-  - image: /img/screen-shot-2023-03-23-at-1.38.52-am.png
+  - image: /img/img4.jpg
     altText: album image
-  - image: /img/dear-deer.jpeg
+  - image: /img/img10.jpg
     altText: album image
-  - image: /img/img-20230122-wa0010.jpg
+  - image: /img/img11.jpg
     altText: album image
-  - image: /img/rainbow-crow-copy.jpeg
+  - image: /img/piano.jpg
     altText: album image
 main:
   heading: Great coffee with no compromises
@@ -81,6 +80,7 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+image: /img/album_art.jpeg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that

@@ -26,7 +26,7 @@ export const IndexPageTemplate = ({
   console.log("heroImage", heroImage);
   return (
     <div>
-      <div className="first-section">
+      <div className="first-section main-background">
         <img src={albumnImg}/>
         <div className="landing-hero image-cover" style={{backgroundImage: `url(${heroImage.images.fallback.src})`}}></div>
         <section className="after-hero">

@@ -10,7 +10,13 @@ import vimeo from "../img/social/vimeo.svg";
 const Footer = () => {
   
     return (
-      <footer className="footer has-background-black has-text-white-ter">
+      <footer className="footer has-background-black has-text-white-ter footer-wrapper">
+        <div className="footer-inner">
+          <span>University of Toronto</span>
+          <span>© 2023 - 2023 Tsz Long, Yu  - All Rights Reserved.</span>
+          <span>Designed &amp; Developed by Ming Hei, Li</span>
+        </div>
+        
         {/* <div className="content has-text-centered">
           <img
             src={logo}

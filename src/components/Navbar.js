@@ -4,6 +4,7 @@ import github from "../img/github-icon.svg";
 import logo from "../img/logo.svg";
 import albumArt from "../img/album_art.jpeg";
 import ComposerListRoll from "./ComposerListRoll";
+import CompositionListRoll from "./CompositionListRoll";
 import $ from 'jquery';
 
 const Navbar = () => {
@@ -36,7 +37,10 @@ const Navbar = () => {
             <Link to="/about">About</Link>
           </li>
           <li className="navbar-item">
-            <Link to="/">Coming Soon</Link>
+            <Link to="/composition">Music</Link>
+            <ul className="navbar-dropdown navbar-dropdown-translate">
+              <CompositionListRoll/>
+            </ul>
           </li>
           <li className="navbar-item">
             <Link to="/composer">Composer</Link>

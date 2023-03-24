@@ -1,6 +1,6 @@
 ---
 templateKey: composer
-title: Alvin Chu (Hong Kong/USA)
+title: Alvin Chu (USA)
 date: 2023-03-23T16:32:21.608Z
 profileImage: /img/dsc_1802.jpeg
 coverImage: /img/a17p0791.jpeg

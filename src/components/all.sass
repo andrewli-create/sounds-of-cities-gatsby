@@ -13,6 +13,8 @@ $theme-color: rgb(224, 233, 236)
 *
   font-family: "Raleway"
   
+.main-background
+  background: $theme-color
 .navbar
   position: sticky
   top: 0
@@ -79,6 +81,8 @@ $theme-color: rgb(224, 233, 236)
   border-top: none !important
   overflow: hidden
 
+.navbar-dropdown-translate
+  transform: translateX(-30%)
 .navbar-dropdown>div:nth-child(1)
   padding-top: 35px
 
@@ -113,7 +117,7 @@ $theme-color: rgb(224, 233, 236)
   display: flex
   flex-direction: colomn
   justify-content: center
-  height: 20vh
+  height: 24vh
   // background-color: $theme-color
   position: relative
   width: 100%
@@ -249,6 +253,55 @@ hr
 
 .no-style-link:hover
   color: $grey
+
+.composition-line
+  width: 100%
+  background-color: rgba(200, 200, 200, 0.2)
+  padding-right: 15%
+
+.composition-wrapper
+  position: relative
+  height: 100px
+  display: flex
+  flex-direction: row
+  justify-content: start
+
+.composition-album-art
+  height: 100px
+  width: 100px
+  object-fit: cover
+.composition-details
+  margin-left: 15%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100%
+
+.composition-title
+  font-size: 1.3em
+
++mobile
+  .composition-details
+    margin-left: 5%
+  .composition-line
+    padding-right: 5%
+
+
+.footer-wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 55px
+  padding: 10px 50px !important
+  margin-top: 30px
+
+.footer-inner
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.footer-inner span
+  font-size: 0.85em
   // // Config vars
 // // Kaldi logo brand color: #FD461E
 // $kaldi-red: #D64000
