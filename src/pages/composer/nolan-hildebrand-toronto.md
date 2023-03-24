@@ -4,7 +4,7 @@ title: Nolan Hildebrand (Toronto)
 date: 2023-03-23T16:35:21.121Z
 profileImage: /img/hildebrand-headshot.jpeg
 coverImage: /img/merzbau.jpeg
-sequence: 1
+sequence: 4
 composition: "Merz Re #2"
 instrumentation: For Electronics
 website: https://nolanahildebrand.wixsite.com/mysite

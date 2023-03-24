@@ -14,7 +14,12 @@ $theme-color: rgb(224, 233, 236)
   font-family: "Raleway"
   
 .main-background
-  background: $theme-color
+  background: url(../img/album_art_blur.jpg)
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  repeat: no-repeat
 .navbar
   position: sticky
   top: 0
@@ -150,6 +155,14 @@ $theme-color: rgb(224, 233, 236)
   z-index: -1
   filter: blur(20px)
 
+.gallery-title
+  text-align: center
+  margin-top: 30px
+  margin-bottom: 30px
+  font-size: 2.5em
+  color: black
+  font-weight: 100
+  padding: 20px 50px
 
 
 
@@ -246,6 +259,15 @@ hr
 .composer-line
   padding: 10px
 
+.go-home-button
+    border-radius: 1000px
+    border: solid rgb(20, 20, 20) 1px
+    padding: 10px 20px
+    width: 200px
+    display: inline-block
+    margin: auto
+    margin-top: 20px
+    margin-bottom: 0px
 
 .no-style-link
   text-decoration: none
@@ -302,6 +324,18 @@ hr
 
 .footer-inner span
   font-size: 0.85em
+
+.fullHeight
+  height: 80vh
+  position: relative
+.big-text
+  font-size: 3em
+.nothing
+  text-align: center
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
   // // Config vars
 // // Kaldi logo brand color: #FD461E
 // $kaldi-red: #D64000

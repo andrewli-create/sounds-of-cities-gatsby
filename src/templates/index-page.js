@@ -33,7 +33,8 @@ export const IndexPageTemplate = ({
             <Link className="hero-listen" to="/composition">Listen</Link>
         </section>
       </div>
-      <section>
+      <section className="gallary-section">
+        <h1 className="gallery-title">Gallery</h1>
         <div className="container">
           <div className="row g-4">
             {gallery.map((galleryItem) => (

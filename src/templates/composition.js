@@ -18,7 +18,7 @@ export const CompositionTemplate = ({
   const PostContent = contentComponent || Content;
   console.log(content);
   return (
-    <section className="section">
+    <section className="section" style={{minHeight: 1000}}>
       {helmet || ""}
       <div className="container content">
         <div className="columns">
@@ -26,6 +26,7 @@ export const CompositionTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            <p>This page is under constructions...</p>
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
