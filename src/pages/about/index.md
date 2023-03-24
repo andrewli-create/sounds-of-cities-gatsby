@@ -14,8 +14,11 @@ Dolby Atmos has reinvented how entertainment is created and experienced, allowin
 If you have your home theatre setup, you can enjoy the music with your surround speakers setup. You can also enjoy the music with a stereo speakers setup or listen to the music in binaural format through your headphones.
 
 Date: March 29, 2023
-Time: 19:30 (EDT)
-Location: Room 330, Faculty of Music, University of Toronto
+
+Time: 19:30 (EDT) 
+
+Location: Room 330, Faculty of Music, University of Toronto 
+
 7.1 surround speaker setup for this listening session
 
 Featured Music & Composers:
