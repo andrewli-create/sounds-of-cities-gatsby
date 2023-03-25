@@ -4,7 +4,7 @@ title: Fish Yu (Hong Kong)
 date: 2023-03-23T16:47:34.443Z
 profileImage: /img/profile-photo.jpeg
 coverImage: /img/rainbow-crow-copy.jpeg
-sequence: 8
+sequence: 9
 composition: Rainbow Crow
 instrumentation: For Symphony Orchestra and Electronics
 website: https://www.youtube.com/channel/UCDIQ8NCaKTgS0T2B0g14LOw
