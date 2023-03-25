@@ -4,7 +4,7 @@ title: Suite of Kairos
 sequence: 5
 composer: Kelvin Lee
 instrumentation: Orchestra, Piano and Electronics
-albumArt: /img/kairos_artwork.jpeg
+albumArt: /img/kairos_poster.png
 youTubeLink: https://www.youtube.com/embed/5hTaTrJowJk
 youTubeLinkB: https://www.youtube.com/embed/5hTaTrJowJk
 spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
