@@ -3,7 +3,7 @@ templateKey: composer
 title: Kelvin Lee (USA)
 date: 2023-03-23T16:36:49.988Z
 profileImage: /img/headshot_kelvin-lee.jpg
-coverImage: /img/kairos_artwork.jpeg
+coverImage: /img/kairos_poster.png
 sequence: 5
 composition: Suite of Kairos
 instrumentation: For Orchestra, Piano and Electronics
