@@ -50,7 +50,8 @@ collections:
       - { label: "Composer", name: "composer", widget: "string" }
       - { label: "Instrumentation", name: "instrumentation", widget: "string" }
       - { label: "Album Art", name: "albumArt", widget: "image" }
-      - { label: "YouTube Link", name: "youTubeLink", widget: "string" }
+      - { label: "YouTube (Binaural)", name: "youTubeLink", widget: "string" }
+      - { label: "YouTube (Stereo)", name: "youTubeLinkB", widget: "string" }
       - { label: "Spotify Link", name: "spotifyLink", widget: "string" }
       - { label: "Programme Notes", name: "programmeNotes", widget: "markdown" }
   - name: "composer"

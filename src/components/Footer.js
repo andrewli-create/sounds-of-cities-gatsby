@@ -12,9 +12,11 @@ const Footer = () => {
     return (
       <footer className="footer has-background-black has-text-white-ter footer-wrapper">
         <div className="footer-inner">
-          <span>University of Toronto</span>
-          <span>© 2023 - 2023 Tsz Long, Yu  - All Rights Reserved.</span>
-          <span>Designed &amp; Developed by Ming Hei, Li</span>
+          <span>University of Toronto Faculty of Music</span>
+          <span>© 2023 Fish &#40;Tsz Long&#41;, Yu  - All Rights Reserved.</span>
+          <Link target="_blank" className="no-style-link" to="https://andrew-the-developer.netlify.app/" style={{color: "rgb(205, 205, 255)"}}>
+            <span>Designed &amp; Developed by Andrew &#40;Ming Hei&#41;, Li</span>
+          </Link>
         </div>
         
         {/* <div className="content has-text-centered">

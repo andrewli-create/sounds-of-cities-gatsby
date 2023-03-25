@@ -12,7 +12,7 @@ $theme-color: rgb(224, 233, 236)
 
 *
   font-family: "Raleway"
-  
+
 .main-background
   background: url(../img/album_art_blur.jpg)
   background-attachment: fixed
@@ -146,6 +146,9 @@ $theme-color: rgb(224, 233, 236)
   color: $black
   background-color: $white
 
+.first-section
+  position: relative
+  
 .first-section>img
   position: absolute
   bottom: 20
@@ -154,11 +157,24 @@ $theme-color: rgb(224, 233, 236)
   height: 100vh
   z-index: -1
   filter: blur(20px)
+.container-sparkle 
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+.landing-gradient
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 66%)
 
 .gallery-title
   text-align: center
-  margin-top: 30px
-  margin-bottom: 30px
+  margin-top: 10px
+  margin-bottom: 10px
   font-size: 2.5em
   color: black
   font-weight: 100
@@ -171,6 +187,11 @@ $theme-color: rgb(224, 233, 236)
   position: relative
   height: 400px
 
+.cover-gradient
+  width: 100%
+  height: 100%
+  background: linear-gradient(0deg, rgba(0,0,0,0.2987788865546218) 0%, rgba(255,255,255,0) 100%)
+
 .profile-image 
   position: absolute
   width: 20vw
@@ -178,8 +199,9 @@ $theme-color: rgb(224, 233, 236)
   left: 50%
   bottom: -50%
   transform: translateX(-50%) translateY(-50%)
-  border-radius: 1000px
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px
+  border-radius: 25px
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px
 
 .bold-text 
   font-weight: bold
@@ -313,7 +335,7 @@ hr
   display: flex
   flex-direction: column
   justify-content: center
-  height: 55px
+  min-height: 55px
   padding: 10px 50px !important
   margin-top: 30px
 
@@ -324,6 +346,13 @@ hr
 
 .footer-inner span
   font-size: 0.85em
+
++mobile
+  .footer-inner
+    flex-direction: column
+    text-align: center
+    padding-top: 12px
+    padding-bottom: 12px
 
 .fullHeight
   height: 80vh
@@ -337,16 +366,57 @@ hr
   flex-direction: column
   justify-content: center
 
+.inside-albumn-art
+  width: 150px
+  height: 150px
+  object-fit: cover
+  border-radius: 15px
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px
+
 .content .compo-title
   margin-bottom: 0.2em
 
+.content .compo-detail-wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  
 .content .compo-detail
   margin: 0 !important
   font-size: 1.2em
 
 .youtube-frame
-  margin-top: 1.5em
+  margin-top: 0em
   min-height: 600px
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px
+
+.content .slight-header
+  margin-top: 40px
+  font-weight: 100
+  font-size: 1.2em
+
+.content .slight-header-programme
+  margin-bottom: 25px !important
+
+.video-header
+  margin-bottom: 0 !important
+  background-color: rgba(0, 0, 0, 0.1)
+  border-radius: 0 25px 0 0
+  width: auto
+  display: inline-block
+  padding: 10px 35px
+  font-size: 1em
+
+.pad-lr-25
+  padding-left: 25px !important
+  padding-right: 25px !important
+
++mobile
+  .pad-lr-25
+    padding-left: 0 !important
+    padding-right: 0 !important
+  .inside-albumn-art
+    display: none
   // // Config vars
 // // Kaldi logo brand color: #FD461E
 // $kaldi-red: #D64000

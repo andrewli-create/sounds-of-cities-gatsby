@@ -6,6 +6,7 @@ composer: Eliot Britton
 instrumentation: Percussion Ensemble, Synthesizers and Electronics
 albumArt: /img/vintage-synth.jpg
 youTubeLink: https://www.youtube.com/embed/5hTaTrJowJk
+youTubeLinkB: https://www.youtube.com/embed/5hTaTrJowJk
 spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
 programmeNotes: >-
   “I never really played what was written, just looked at the melody and made it

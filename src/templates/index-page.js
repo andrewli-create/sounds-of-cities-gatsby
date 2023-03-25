@@ -23,10 +23,12 @@ export const IndexPageTemplate = ({
   gallery
 }) => {
   const heroImage = getImage(image) || image;
+  const bigImg = [2, 3, 6, 7, 10];
   console.log("heroImage", heroImage);
   return (
     <div>
       <div className="first-section main-background">
+        <div className="landing-gradient"></div>
         <img src={albumnImg}/>
         <div className="landing-hero image-cover" style={{backgroundImage: `url(${heroImage.images.fallback.src})`}}></div>
         <section className="after-hero">
@@ -34,11 +36,20 @@ export const IndexPageTemplate = ({
         </section>
       </div>
       <section className="gallary-section">
-        <h1 className="gallery-title">Gallery</h1>
+        <h1 className="gallery-title">The Sounds of Cities</h1>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <p style={{paddingTop: 10, paddingBottom: 80, textAlign: 'center', maxWidth: 800, margin: 'auto'}}>
+                "The Sounds of Cities is a 80-minutes long Dolby Atmos Music Album that includes music from 9 living composers who compose music in different genres and styles. Inspired by the elements of a city that are everywhere in the surrounding, I am doing a Dolby Atmos mix for the music in this album to provide an immersive hearing experience to the audience, just like the audience is walking on the street, talking the subway or watching a movie in a theatre."
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="container">
           <div className="row g-4">
-            {gallery.map((galleryItem) => (
-              <div className="col-md-4">
+            {gallery.map((galleryItem, index) => (
+              <div className={bigImg.includes(index+1) ? "col-md-8" : "col-md-4"}>
                 <div className="image-cover main-gallery-img" style={{backgroundImage: `url(${galleryItem.image.childImageSharp.gatsbyImageData.images.fallback.src})`}}></div>
               </div>
             ))}

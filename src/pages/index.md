@@ -45,6 +45,7 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 title: Great coffee with a conscience
+image: /img/album_art.jpeg
 gallery:
   - image: /img/img1.jpg
     altText: image-1
@@ -64,6 +65,8 @@ gallery:
     altText: album image
   - image: /img/piano.jpg
     altText: album image
+  - image: /img/img12.jpg
+    altText: img-12
 main:
   heading: Great coffee with no compromises
   description: >
@@ -80,7 +83,6 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-image: /img/album_art.jpeg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that

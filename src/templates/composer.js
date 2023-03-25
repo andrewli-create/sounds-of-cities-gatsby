@@ -31,6 +31,7 @@ export const ComposerTemplate = ({
   return (
     <div>
       <div className="cover-image image-cover" style={{backgroundImage: `url(${coverImage.childImageSharp.gatsbyImageData.images.fallback.src})`}}>
+        <div className="cover-gradient"></div>
         <div className="profile-image image-cover" style={{backgroundImage: `url(${profileImage.childImageSharp.gatsbyImageData.images.fallback.src})`}}></div>
       </div>
       <div className="container profile-content">
