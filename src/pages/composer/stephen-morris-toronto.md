@@ -23,19 +23,13 @@ bio: >-
   Yancheng First  
 
 
-  Public Retail Market, New York University, and the University of North Carolina Greensboro. He has collaborated with ensembles and artists like the Prague Philharmonia, Imani Winds,  
+  Public Retail Market, New York University, and the University of North Carolina Greensboro. He has collaborated with ensembles and artists like the Prague Philharmonia, Imani Winds, Moscow Contemporary Ensemble, Hanzhi Wang, and the Lincoln Centre Theatre Directors Lab.   
 
 
-  Moscow Contemporary Ensemble, Hanzhi Wang, and the Lincoln Centre Theatre Directors Lab.   
+   Stephen has participated in various music festivals as a composer such as Ostrava Days (Czech Republic), Écoles d'art américaines de Fontainebleau (France), Impuls (Austria), reMusik (Russia), Don’t Sleep In Yancheng (China),Imani Winds Chamber Festival (USA), Charlotte New Music Festival (USA), Music At The Close (USA), and SCI Regional Conference (USA).  
 
 
-   Stephen has participated in various music festivals as a composer such as Ostrava Days (Czech  
-
-
-  Republic), Écoles d'art américaines de Fontainebleau (France), Impuls (Austria), reMusik (Russia), Don’t Sleep In Yancheng (China),Imani Winds Chamber Festival (USA), Charlotte New Music Festival (USA), Music At The Close (USA), and SCI Regional Conference (USA).  
-
-
-   Stephen is a graduate of Mannes School of Music where he earned his Masters of Music in composition. Stephen is currently a DMA candidate at the University of Toronto, studying with Gary Kulesha. He has recently served as the composer in residence for the percussion ensemble, which premiered his work Subterranean Dreams. He is currently the composer in residence of the University of Toronto Wind Symphony. Stephen is a recipient of the Fondation DRG award through the University for his performances abroad in France.   
+  Stephen is a graduate of Mannes School of Music where he earned his Masters of Music in composition. Stephen is currently a DMA candidate at the University of Toronto, studying with Gary Kulesha. He has recently served as the composer in residence for the percussion ensemble, which premiered his work Subterranean Dreams. He is currently the composer in residence of the University of Toronto Wind Symphony. Stephen is a recipient of the Fondation DRG award through the University for his performances abroad in France.   
 
 
   Stephen has previously studied with Reiko Füting, and Huang Ruo. He has taken lessons and master classes with Tristan Murail, George Lewis, Christian Wolff, Bernhard Lang, Bright Sheng, Vladimir Tarnopolsky, Kotoka Suzuki, Deqing Wen, and Ana Sokolovic.
