@@ -7,7 +7,7 @@ instrumentation: Electronics
 albumArt: /img/merzbau.jpeg
 youTubeLink: https://youtu.be/pN8BB2A0ZaI
 youTubeLinkB: https://youtu.be/Tsc8xlN5O-c
-spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://youtu.be/Tsc8xlN5O-c
 programmeNotes: 'Merz Re \[#2] was written for Fish Yu’s Dolby Atmos project
   entitled The Sounds of Cities. Merz Re \[#2] is the second work in a series of
   acousmatic pieces inspired by dada artist Kurt Schwitters and his concept of
