@@ -7,7 +7,7 @@ instrumentation: Electronics Music
 albumArt: /img/screen-shot-2023-03-23-at-1.38.52-am.png
 youTubeLink: https://www.youtube.com/embed/RWj5Zh_E1Gw
 youTubeLinkB: https://www.youtube.com/embed/oxgosE990rA
-spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://www.youtube.com/embed/oxgosE990rA
 programmeNotes: >-
   Reflecting on silence as a response in the face of discrimination and
   oppression, the chamber quartet Charsu is collaborating with composer Parisa
