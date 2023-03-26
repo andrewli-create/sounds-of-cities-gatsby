@@ -42,6 +42,9 @@ const Navbar = () => {
               <CompositionListRoll/>
             </ul>
           </li>
+          <li className="navbar-item no-touch">
+            <Link to="/composition">Coming Soon</Link>
+          </li>
           <li className="navbar-item">
             <Link to="/composer">Composer</Link>
             <ul className="navbar-dropdown">

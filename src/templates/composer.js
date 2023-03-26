@@ -54,10 +54,15 @@ export const ComposerTemplate = ({
           <hr/>
           <div className="profile-content-wrapper">
             <h3 className="subtitle">Bio</h3>
-            <p className="paragraph">{bio}</p>
+            {/* <p className="paragraph">{bio}</p> */}
+            <p className="paragraph">
+              <PostContent content={bio}/>
+            </p>
             <br/>
             <h3 className="subtitle">Programme Notes</h3>
-            <p className="paragraph">{programmeNotes}</p>
+            <p className="paragraph">
+              <PostContent content={programmeNotes}/>
+            </p>
           </div>
         </div>
       </div>
