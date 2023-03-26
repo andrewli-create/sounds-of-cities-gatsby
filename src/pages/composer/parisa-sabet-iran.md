@@ -30,9 +30,7 @@ bio: >-
   Sabet earned the Doctor of Musical Arts and Master of Music degrees in composition from the University of Toronto, where her honors included the Mirkopoulos and Miller/Khoshkish fellowships and the Tecumesh Sherman Rogers Graduating Award given to a musician on the cusp of making important contributions to the field. She completed her Bachelor of Music degree with honors at Roosevelt University in Chicago. Among her teachers are Christos Hatzis, Keith Tedman, Kyong Mee Choi, Ka Nin Chan, and Stacy Garrop. Her adventure with music began at age 9 with piano lessons in Shiraz.
 
 
-  <﻿br>**\
-
-  Learn more about Parisa Sabet and listen to her music at her website: [ParisaSabet.com](https://can01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.parisasabet.com%2F&data=05%7C01%7Ctszlong.yu%40mail.utoronto.ca%7C829c4803856146bb509e08db1ad4f750%7C78aac2262f034b4d9037b46d56c55210%7C0%7C0%7C638133274891749982%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=nezszoTJvIyIu3XL0igfHfLEDwGsVu99IhPU3z2jcqo%3D&reserved=0)**
+  ##### **Learn more about Parisa Sabet and listen to her music at her website: [ParisaSabet.com](https://can01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.parisasabet.com%2F&data=05%7C01%7Ctszlong.yu%40mail.utoronto.ca%7C829c4803856146bb509e08db1ad4f750%7C78aac2262f034b4d9037b46d56c55210%7C0%7C0%7C638133274891749982%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=nezszoTJvIyIu3XL0igfHfLEDwGsVu99IhPU3z2jcqo%3D&reserved=0)**
 programmeNotes: >-
   Reflecting on silence as a response in the face of discrimination and
   oppression, the chamber quartet Charsu is collaborating with composer Parisa
