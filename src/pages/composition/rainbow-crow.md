@@ -7,7 +7,7 @@ instrumentation: Symphony Orchestra and Electronics
 albumArt: /img/rainbow-crow-copy.jpeg
 youTubeLink: https://youtu.be/YCuXCoW1UQ0
 youTubeLinkB: https://youtu.be/RCWb1zaIeG8
-spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://youtu.be/RCWb1zaIeG8
 programmeNotes: >-
   After a long period of cold weather, the animals of the community become
   worried. They decide to send a messenger to the Great Sky Spirit to ask for
