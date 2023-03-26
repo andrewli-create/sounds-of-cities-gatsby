@@ -7,7 +7,7 @@ instrumentation: Percussion Ensemble, Synthesizers and Electronics
 albumArt: /img/vintage-synth.jpg
 youTubeLink: https://youtu.be/ROx4ZP2k9bo
 youTubeLinkB: https://youtu.be/9OFUVgekQEw
-spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
+spotifyLink: https://youtu.be/9OFUVgekQEw
 programmeNotes: >-
   “I never really played what was written, just looked at the melody and made it
   up as I went along”, said Gran, referring her loose interpretations of the
