@@ -5,8 +5,8 @@ sequence: 9
 composer: Fish Yu
 instrumentation: Symphony Orchestra and Electronics
 albumArt: /img/rainbow-crow-copy.jpeg
-youTubeLink: https://www.youtube.com/embed/5hTaTrJowJk
-youTubeLinkB: https://www.youtube.com/embed/5hTaTrJowJk
+youTubeLink: https://youtu.be/YCuXCoW1UQ0
+youTubeLinkB: https://youtu.be/RCWb1zaIeG8
 spotifyLink: https://www.youtube.com/embed/5hTaTrJowJk
 programmeNotes: >-
   After a long period of cold weather, the animals of the community become
