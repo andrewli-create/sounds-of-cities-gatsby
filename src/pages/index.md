@@ -44,7 +44,7 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
-title: Great coffee with a conscience
+title: Photos
 image: /img/album_art.jpeg
 gallery:
   - image: /img/img1.jpg
