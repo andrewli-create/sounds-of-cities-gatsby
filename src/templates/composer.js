@@ -56,7 +56,8 @@ export const ComposerTemplate = ({
             <h3 className="subtitle">Bio</h3>
             {/* <p className="paragraph">{bio}</p> */}
             <p className="paragraph">
-              <PostContent content={bio}/>
+              {/* <PostContent content={bio}/> */}
+              <div dangerouslySetInnerHTML={{ __html: bio}} />
             </p>
             <br/>
             <h3 className="subtitle">Programme Notes</h3>
