@@ -5,7 +5,7 @@ title: About
 ---
 ### **The Sounds of Cities**
 
-is a 80-minutes long Dolby Atmos Music Album that includes music from 9 living composers who compose music in different genres and styles. Inspired by the elements of a city that are everywhere in the surrounding, I am doing a Dolby Atmos mix for the music in this album to provide an immersive hearing experience to the audience, just like the audience is walking on the street, talking the subway or watching a movie in a theatre.
+is an 80-minute long Dolby Atmos Music Album that includes music from 9 living composers who compose music in different genres and styles. Inspired by the elements of a city that are everywhere in the surrounding, I am doing a Dolby Atmos mix for the music in this album to provide an immersive hearing experience to the audience, just like the audience is walking on the street, taking the subway or watching a movie in a theatre.
 
 Since I was trained as a music composer and composed music inspired by my hometown – Hong Kong, I always questioned why my hometown often is the topic of my composition. When I came to Toronto, I finally found that, in the past, my hometown was an invisible influence on me. The city's daily life, sound, view, and language are always in my surroundings. Once I leave, the inspiration and the sound of my music change. Because of this, I would like to explore deeper to know what the cities sound like worldwide. To reach my interest in contemporary classical music composition and my practice in music production, I am collecting composer's works and producing them in an immersive listening experience through this album. To showcase The Sounds of Cities by composers with my creative and technical approach to surround mix on their music composition. 
 
