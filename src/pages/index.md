@@ -47,13 +47,12 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
-paragraph: '"The Sounds of Cities is a 80-minutes long Dolby Atmos Music Album
+paragraph: "\"The Sounds of Cities is an 80-minute long Dolby Atmos Music Album
   that includes music from 9 living composers who compose music in different
   genres and styles. Inspired by the elements of a city that are everywhere in
-  the surrounding, I am doing a Dolby Atmos mix for the music in this album to
-  provide an immersive hearing experience to the audience, just like the
-  audience is walking on the street, talking the subway or watching a movie in a
-  theatre."'
+  the surroundings, Toronto-based producer Fish Yu's Dolby Atmos mix provides an
+  immersive hearing experience to the audience, just like the audience is
+  walking on the street, taking the subway or watching a movie in a theatre.\""
 gallery:
   - image: /img/img1.jpg
     altText: image-1
