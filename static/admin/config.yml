@@ -94,6 +94,9 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
+          - { label: Header 1, name: header1, widget: string }
+          - { label: Paragraph, name: paragraph, widget: markdown }
+          - { label: Header 2, name: header2, widget: string }
           - { label: Image, name: image, widget: image }
           - {
               label: Gallery,

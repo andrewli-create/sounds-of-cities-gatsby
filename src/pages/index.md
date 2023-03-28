@@ -2,6 +2,9 @@
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 templateKey: index-page
+title: Photos
+header1: The Sounds of Cities
+header2: Behind The Scene
 mainpitch:
   title: Why Kaldi
   description: >
@@ -44,8 +47,13 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
-title: Photos
-image: /img/album_art.jpeg
+paragraph: '"The Sounds of Cities is a 80-minutes long Dolby Atmos Music Album
+  that includes music from 9 living composers who compose music in different
+  genres and styles. Inspired by the elements of a city that are everywhere in
+  the surrounding, I am doing a Dolby Atmos mix for the music in this album to
+  provide an immersive hearing experience to the audience, just like the
+  audience is walking on the street, talking the subway or watching a movie in a
+  theatre."'
 gallery:
   - image: /img/img1.jpg
     altText: image-1
@@ -83,6 +91,7 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+image: /img/album_art.jpeg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that

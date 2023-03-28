@@ -15,6 +15,9 @@ import albumnImg from "../img/album_art.jpeg"
 export const IndexPageTemplate = ({
   image,
   title,
+  header1,
+  paragraph,
+  header2,
   heading,
   subheading,
   mainpitch,
@@ -36,16 +39,17 @@ export const IndexPageTemplate = ({
         </section>
       </div>
       <section className="gallary-section">
-        <h1 className="gallery-title">The Sounds of Cities</h1>
+        <h1 className="gallery-title">{header1}</h1>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <p style={{paddingTop: 10, paddingBottom: 80, textAlign: 'center', maxWidth: 800, margin: 'auto'}}>
-                "The Sounds of Cities is a 80-minutes long Dolby Atmos Music Album that includes music from 9 living composers who compose music in different genres and styles. Inspired by the elements of a city that are everywhere in the surrounding, I am doing a Dolby Atmos mix for the music in this album to provide an immersive hearing experience to the audience, just like the audience is walking on the street, talking the subway or watching a movie in a theatre."
+                {paragraph}
               </p>
             </div>
           </div>
         </div>
+        <h1 className="bts-title">{header2}</h1>
         <div className="container">
           <div className="row g-4">
             {gallery.map((galleryItem, index) => (
@@ -63,6 +67,9 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
+  header1: PropTypes.string,
+  paragraph: PropTypes.string,
+  header2: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
@@ -85,6 +92,9 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
+        header1={frontmatter.header1}
+        paragraph={frontmatter.paragraph}
+        header2={frontmatter.header2}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
@@ -110,6 +120,9 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
+        header1
+        paragraph
+        header2
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
