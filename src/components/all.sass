@@ -25,15 +25,17 @@ $theme-color: rgb(224, 233, 236)
   .main-background
     background-attachment: unset !important
 
-.navbar
+.navbar-wrapper
   position: sticky
   top: 0
+  z-index: 20
+
+.navbar
   display: flex
   flex-direction: row
   justify-content: space-between
   margin: 0
   padding: 0
-  z-index: 20
   background-color: $white
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px
 
@@ -63,11 +65,18 @@ $theme-color: rgb(224, 233, 236)
   display: flex
   flex-direction: row
   justify-content: space-between
+  
++mobile
+  .nav-item-wrapper
+    display: none
 
 .navbar-item
   position: relative
   padding: 5px 10px 5px 10px
 
+.mobile-navbar-item a
+  color: $black
+  
 .navbar ul .navbar-dropdown-item
   padding: 5px 15px
   text-align: center
@@ -96,6 +105,19 @@ $theme-color: rgb(224, 233, 236)
 .navbar-dropdown>div:nth-child(1)
   padding-top: 35px
   
+.mobile-burger
+  cursor: pointer
+  display: none
+  height: 30px
+  width: 30px
+  margin-right: 30px
+
+.mobile-burger .burger-bar
+  height: 5%
+  width: 100%
+  background-color: $black
+  border-radius: 1000px
+ 
 +mobile
   .navbar ul
     width: 100%
@@ -103,8 +125,35 @@ $theme-color: rgb(224, 233, 236)
     padding-right: 10px
 
   .navbar-logo
-    display: none
+    // display: none
 
+  .mobile-burger
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+
+.mobile-drop-down-wrapper
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100vw
+  z-index: 3
+  background-color: rgba(255, 255, 255, 1)
+
+.mobile-drop-down
+  height: 100%
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.mobile-drop-down li
+  text-align: center
+  font-size: 1.5em
+  padding: 15px 10px
 
 .image-cover 
   background-size: cover
@@ -438,7 +487,7 @@ hr
 
 .no-touch *
   pointer-events: none
-  color: rgba(100, 100, 100, 1) !important
+  color: rgba(100, 100, 100, 0.8) !important
   // // Config vars
 // // Kaldi logo brand color: #FD461E
 // $kaldi-red: #D64000

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
@@ -10,6 +10,9 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 import albumnImg from "../img/album_art.jpeg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import AnimatedBG from "../components/AnimatedBG"
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -25,36 +28,40 @@ export const IndexPageTemplate = ({
   intro,
   gallery
 }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const heroImage = getImage(image) || image;
   const bigImg = [2, 3, 6, 7, 10];
   console.log("heroImage", heroImage);
   return (
     <div>
+      {/* <AnimatedBG/> */}
       <div className="first-section main-background">
         <div className="landing-gradient"></div>
         <img src={albumnImg}/>
-        <div className="landing-hero image-cover" style={{backgroundImage: `url(${heroImage.images.fallback.src})`}}></div>
-        <section className="after-hero">
+        <div data-aos='fade-up' className="landing-hero image-cover" style={{backgroundImage: `url(${heroImage.images.fallback.src})`}}></div>
+        <section className="after-hero" data-aos='fade-up'>
             <Link className="hero-listen" to="/composition">Listen</Link>
         </section>
       </div>
       <section className="gallary-section">
-        <h1 className="gallery-title">{header1}</h1>
+        <h1 className="gallery-title" data-aos='fade-up'>{header1}</h1>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <p style={{paddingTop: 10, paddingBottom: 80, textAlign: 'center', maxWidth: 800, margin: 'auto'}}>
+              <p style={{paddingTop: 10, paddingBottom: 80, textAlign: 'center', maxWidth: 800, margin: 'auto'}} data-aos='fade-up'>
                 {paragraph}
               </p>
             </div>
           </div>
         </div>
-        <h1 className="bts-title">{header2}</h1>
+        <h1 className="bts-title" data-aos='fade-up'>{header2}</h1>
         <div className="container">
           <div className="row g-4">
             {gallery.map((galleryItem, index) => (
               <div className={bigImg.includes(index+1) ? "col-md-8" : "col-md-4"}>
-                <div className="image-cover main-gallery-img" style={{backgroundImage: `url(${galleryItem.image.childImageSharp.gatsbyImageData.images.fallback.src})`}}></div>
+                <div data-aos={bigImg.includes(index+1) ? 'fade-left' : 'fade-right'} className="image-cover main-gallery-img" style={{backgroundImage: `url(${galleryItem.image.childImageSharp.gatsbyImageData.images.fallback.src})`}}></div>
               </div>
             ))}
           </div>

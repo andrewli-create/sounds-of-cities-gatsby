@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 import Content, { HTMLContent } from "./Content";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ComposerRollTemplate = (props) => {
-  
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const { edges: posts } = props.data.allMarkdownRemark;
   console.log("composer", posts);
   return (
     <div className="row">
       {posts &&
         posts.map(({ node: post }) => (
-          <div className="composer-block col-md-4" key={post.id}>
+          <div data-aos='fade-up' className="composer-block col-md-4" key={post.id}>
             <ComposerContent
               title={post.frontmatter.title}
               content={post.html}

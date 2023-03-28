@@ -22,41 +22,79 @@ const Navbar = () => {
     $( "body" ).on( "mouseleave", ".navbar-item", function() {
       $(this).find(".navbar-dropdown").fadeOut('fast');
     });
+
+    $( "body" ).on( "click", ".closed", function() {
+      $(this).removeClass("closed");
+      $(".mobile-drop-down-wrapper").slideDown();
+      $(this).addClass("opened");
+    });
+
+    $( "body" ).on( "click", ".opened", function() {
+      $(this).removeClass("opened");
+      $(".mobile-drop-down-wrapper").slideUp();
+      $(this).addClass("closed");
+    });
   }
   return (
-    <nav className="navbar">
-      <Link to="/" className="navbar-logo" title="Logo">
-        <img className="navbar-logo-image" src={albumArt} alt="Sound of Cities"/>
-      </Link>
-      <ul className="nav-item-wrapper">
-        <ul className="nav-item-wrapper-inner">
-          <li className="navbar-item">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/composition">Music</Link>
-            <ul className="navbar-dropdown navbar-dropdown-translate">
-              <CompositionListRoll/>
-            </ul>
-          </li>
-          <li className="navbar-item no-touch">
-            <Link to="/composition">Coming Soon</Link>
-          </li>
-          <li className="navbar-item">
-            <Link to="/composer">Composer</Link>
-            <ul className="navbar-dropdown">
-              <ComposerListRoll/>
-            </ul>
-          </li>
-          {/* <li className="navbar-item">
-            <Link to="/about">Contact</Link>
-          </li> */}
+    <div className="navbar-wrapper">
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo" title="Logo">
+          <img className="navbar-logo-image" src={albumArt} alt="Sound of Cities"/>
+        </Link>
+        <div className="mobile-burger closed">
+          <div className="burger-bar"></div>
+          <div className="burger-bar"></div>
+          <div className="burger-bar"></div>
+        </div>
+        <ul className="nav-item-wrapper">
+          <ul className="nav-item-wrapper-inner">
+            <li className="navbar-item">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="navbar-item">
+              <Link to="/composition">Music</Link>
+              <ul className="navbar-dropdown navbar-dropdown-translate">
+                <CompositionListRoll/>
+              </ul>
+            </li>
+            <li className="navbar-item">
+              <Link to="/composer">Composer</Link>
+              <ul className="navbar-dropdown">
+                <ComposerListRoll/>
+              </ul>
+            </li>
+            <li className="navbar-item no-touch">
+            <Link to="/">Streaming <span style={{fontSize: 10}}>Coming Soon!</span></Link>
+            </li>
+            {/* <li className="navbar-item">
+              <Link to="/about">Contact</Link>
+            </li> */}
+          </ul>
         </ul>
-      </ul>
-    </nav>
+      </nav>
+      <div className="mobile-drop-down-wrapper">
+        <ul className="mobile-drop-down">
+            <li className="mobile-navbar-item">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="mobile-navbar-item">
+              <Link to="/about">About</Link>
+            </li>
+            <li className="mobile-navbar-item">
+              <Link to="/composition">Music</Link>
+            </li>
+            <li className="mobile-navbar-item">
+              <Link to="/composer">Composer</Link>
+            </li>
+            <li className="mobile-navbar-item no-touch">
+              <Link to="/">Streaming <span style={{fontSize: 10}}>Coming Soon!</span></Link>
+            </li>
+        </ul>
+      </div>
+    </div>
     // <nav
     //   className="navbar is-transparent"
     //   role="navigation"

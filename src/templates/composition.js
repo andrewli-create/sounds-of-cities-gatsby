@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // eslint-disable-next-line
 export const CompositionTemplate = ({
@@ -19,6 +21,9 @@ export const CompositionTemplate = ({
   programmeNotes,
   albumArt
 }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const PostContent = contentComponent || Content;
   console.log("title", title);
   console.log("composer", composer);
@@ -39,30 +44,30 @@ export const CompositionTemplate = ({
               </div>
               <div className="col-md-9 col-lg-10 col-xl-10 compo-detail-wrapper">
                 <div className="pad-lr-25" style={{paddingLeft: 25, paddingRight: 25}}>
-                  <h1 className="compo-title is-size-2 has-text-weight-bold is-bold-light">
+                  <h1 data-aos='fade-up' className="compo-title is-size-2 has-text-weight-bold is-bold-light">
                     {title}
                   </h1>
-                  <h2 className="compo-detail">{composer} - {instrumentation}</h2>
+                  <h2 data-aos='fade-up' className="compo-detail">{composer} - {instrumentation}</h2>
                 </div>
               </div>
               <div className="row">
                 <div>
-                  <h2 className="slight-header video-header">Binaural</h2>
+                  <h2 data-aos='fade-up' className="slight-header video-header">Binaural</h2>
                 </div>
-                <iframe className="youtube-frame" src={post.frontmatter.youTubeLink}></iframe>
+                <iframe data-aos='fade-up' className="youtube-frame" src={post.frontmatter.youTubeLink}></iframe>
               </div>
               <div className="row">
                 <div>
-                  <h2 className="slight-header video-header">Stereo</h2>
+                  <h2 data-aos='fade-up' className="slight-header video-header">Stereo</h2>
                 </div>
-                <iframe className="youtube-frame" src={post.frontmatter.youTubeLinkB}></iframe>
+                <iframe data-aos='fade-up' className="youtube-frame" src={post.frontmatter.youTubeLinkB}></iframe>
               </div>
-              <h2 className="slight-header slight-header-programme" style={{marginTop: 50, fontWeight: 'bold', fontSize: '1.5em'}}>Programme Notes:</h2>
+              <h2 data-aos='fade-up' className="slight-header slight-header-programme" style={{marginTop: 50, fontWeight: 'bold', fontSize: '1.5em'}}>Programme Notes:</h2>
               {/* <p style={{marginTop: 15}}>
                 {programmeNotes}
               </p> */}
               {/* <p>This page is under constructions...</p> */}
-              <PostContent content={programmeNotes} />
+              <PostContent data-aos='fade-up' content={programmeNotes} />
             </div>
           </div>
         </div>

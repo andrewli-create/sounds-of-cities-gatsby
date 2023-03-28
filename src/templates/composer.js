@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // eslint-disable-next-line
 export const ComposerTemplate = ({
@@ -26,6 +28,9 @@ export const ComposerTemplate = ({
   programmeNotes,
   helmet,
 }) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const PostContent = contentComponent || Content;
   console.log(programmeNotes);
   return (
@@ -36,13 +41,13 @@ export const ComposerTemplate = ({
       </div>
       <div className="container profile-content">
         <div className="col-md-12">
-          <h1>{title}</h1>
-          <h3>Composition | <span className="bold-text">{composition}</span></h3>
-          <h3>Instrumentation | <span className="bold-text">{instrumentation}</span></h3>
-          <h3><Link to={website}> {website}</Link></h3>
+          <h1 data-aos='fade-up'>{title}</h1>
+          <h3 data-aos='fade-up'>Composition | <span className="bold-text">{composition}</span></h3>
+          <h3 data-aos='fade-up'>Instrumentation | <span className="bold-text">{instrumentation}</span></h3>
+          <h3 data-aos='fade-up'><Link to={website}> {website}</Link></h3>
           {socialHandleA
             ? 
-            <h3>
+            <h3 data-aos='fade-up'>
               <Link to={socialMediaA}>{socialHandleA}</Link>
               {socialMediaB != '-'
                 ? <Link to={socialMediaB}> | {socialHandleB}</Link>
@@ -53,15 +58,15 @@ export const ComposerTemplate = ({
           }
           <hr/>
           <div className="profile-content-wrapper">
-            <h3 className="subtitle">Bio</h3>
+            <h3 data-aos='fade-up' className="subtitle">Bio</h3>
             {/* <p className="paragraph">{bio}</p> */}
             <p className="paragraph">
               {/* <PostContent content={bio}/> */}
-              <div dangerouslySetInnerHTML={{ __html: bio}} />
+              <div data-aos='fade-up' dangerouslySetInnerHTML={{ __html: bio}} />
             </p>
             <br/>
-            <h3 className="subtitle">Programme Notes</h3>
-            <p className="paragraph">
+            <h3 data-aos='zoom-in' className="subtitle">Programme Notes</h3>
+            <p data-aos='zoom-in' className="paragraph">
               <PostContent content={programmeNotes}/>
             </p>
           </div>
