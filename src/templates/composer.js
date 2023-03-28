@@ -44,13 +44,13 @@ export const ComposerTemplate = ({
           <h1 data-aos='fade-up'>{title}</h1>
           <h3 data-aos='fade-up'>Composition | <span className="bold-text">{composition}</span></h3>
           <h3 data-aos='fade-up'>Instrumentation | <span className="bold-text">{instrumentation}</span></h3>
-          <h3 data-aos='fade-up'><Link to={website}> {website}</Link></h3>
+          <h3 data-aos='fade-up'><Link target="_blank" to={website.includes('https://') ? website : ('https://'+ website)}> {website}</Link></h3>
           {socialHandleA
             ? 
             <h3 data-aos='fade-up'>
-              <Link to={socialMediaA}>{socialHandleA}</Link>
+              <Link target="_blank" to={socialMediaA}>{socialHandleA}</Link>
               {socialMediaB != '-'
-                ? <Link to={socialMediaB}> | {socialHandleB}</Link>
+                ? <Link target="_blank" to={socialMediaB}> | {socialHandleB}</Link>
                 : ''
               }
             </h3>
