@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
@@ -23,10 +23,13 @@ export const ProductPageTemplate = ({
 }) => {
   const heroImage = getImage(image) || image;
   const fullWidthImage = getImage(fullImage) || fullImage;
-
+  useEffect(() => {
+    window.location.href = "/404";
+    window.location.replace("/404");
+  }, []);
   return (
     <div className="content">
-      <FullWidthImage img={heroImage} title={title} />
+      {/* <FullWidthImage img={heroImage} title={title} />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -91,7 +94,7 @@ export const ProductPageTemplate = ({
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -4,10 +4,15 @@ import Layout from "../../components/Layout";
 import BlogRoll from "../../components/BlogRoll";
 
 export default class BlogIndexPage extends React.Component {
+  componentDidMount() {
+    window.location.href = "/404";
+    window.location.replace("/404");
+  }
+
   render() {
     return (
       <Layout>
-        <div
+        {/* <div
           className="full-width-image-container margin-top-0"
           style={{
             backgroundImage: `url('/img/blog-index.jpg')`,
@@ -31,7 +36,7 @@ export default class BlogIndexPage extends React.Component {
               <BlogRoll />
             </div>
           </div>
-        </section>
+        </section> */}
       </Layout>
     );
   }

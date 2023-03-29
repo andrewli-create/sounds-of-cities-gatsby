@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { kebabCase } from "lodash";
 import { Helmet } from "react-helmet";
@@ -17,10 +17,14 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
   console.log(helmet);
+  useEffect(() => {
+    window.location.href = "/404";
+    window.location.replace("/404");
+  }, []);
   return (
     <section className="section">
       {helmet || ""}
-      <div className="container content">
+      {/* <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
@@ -42,7 +46,7 @@ export const BlogPostTemplate = ({
             ) : null}
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
