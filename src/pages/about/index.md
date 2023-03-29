@@ -41,3 +41,15 @@ Dear Deer, in the Deep of the Woods - Yuhan Zhou
 Subterranean Dreams - Stephen Morris
 
 Rainbow Crow - Fish Yu
+
+
+
+### **About The Producer**
+
+Toronto-based producer Fish Yu, is trained as a music composer, sound engineer and music producer, who is professional in capturing and producing acoustic, electroacoustic and spatial music in studio production and live performances. He was involved as a sound engineer in the University of Toronto New Music Festival (New Techniques in Global Collaboration for Musical Performance, Electroacoustic Music Concert, Songwriting Concert, Hatzis @ 70), Electroacoustic Music Concert (7.1 speaker configuration), Percussion and Tapir Lab (Pleiades and Persephassa by Iannis Xenakis and Mikrophonie I by Karlheinz Stockhausen), etc.
+
+To explore the possibility of applying technology (spatial audio design, live signal processing) in music performance and music composition, Yu is going to study DMA in music composition at the University of Toronto in 2023 fall to research deeper into the field and produce more music.
+
+Fish Yu’s CV:
+
+<https://docs.google.com/document/d/1bt-Xs2DwrdzlTTMuJF_M5CSeyVbk2F1e3BV2PFm4QXs/edit?usp=sharing>
