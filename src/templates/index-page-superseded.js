@@ -29,7 +29,7 @@ export const IndexPageTemplate = ({
           <div className="col-md-12 yay">
             {console.log(gallery)}
             {gallery.map((galleryItem) => (
-              <img src={galleryItem.image.childImageSharp.gatsbyImageData.images.fallback.src}></img>
+              <img src={galleryItem.image.childImageSharp.gatsbyImageData.images.fallback.src} alt="behind the scene image"></img>
             ))}
             {/* {gallery &&
               gallery.map(({ node: galleryItem }) => (

@@ -62,7 +62,7 @@ export const ComposerContent = ({
   return (
     <div className='composition-line'>
       <Link className='composition-wrapper no-style-link' to={link}>
-        <img className='composition-album-art' src={albumArt}/>
+        <img className='composition-album-art' src={albumArt} alt="album art picture"/>
         <div className='composition-details'>
           <h2 className='composition-title'>{title}</h2>
           <h3>{composer}</h3>

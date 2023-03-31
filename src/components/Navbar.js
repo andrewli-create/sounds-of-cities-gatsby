@@ -47,32 +47,34 @@ const Navbar = () => {
           <div className="burger-bar"></div>
         </div>
         <ul className="nav-item-wrapper">
-          <ul className="nav-item-wrapper-inner">
-            <li className="navbar-item">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="navbar-item">
-              <Link to="/about">About</Link>
-            </li>
-            <li className="navbar-item">
-              <Link to="/composition">Music</Link>
-              <ul className="navbar-dropdown navbar-dropdown-translate">
-                <CompositionListRoll/>
-              </ul>
-            </li>
-            <li className="navbar-item">
-              <Link to="/composer">Composer</Link>
-              <ul className="navbar-dropdown">
-                <ComposerListRoll/>
-              </ul>
-            </li>
-            <li className="navbar-item no-touch">
-            <Link to="/">Streaming <span style={{fontSize: 10}}>Coming Soon!</span></Link>
-            </li>
-            {/* <li className="navbar-item">
-              <Link to="/about">Contact</Link>
-            </li> */}
-          </ul>
+          <li>
+            <ul className="nav-item-wrapper-inner">
+              <li className="navbar-item">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="navbar-item">
+                <Link to="/about">About</Link>
+              </li>
+              <li className="navbar-item">
+                <Link to="/composition">Music</Link>
+                <ul className="navbar-dropdown navbar-dropdown-translate">
+                  <CompositionListRoll/>
+                </ul>
+              </li>
+              <li className="navbar-item">
+                <Link to="/composer">Composer</Link>
+                <ul className="navbar-dropdown">
+                  <ComposerListRoll/>
+                </ul>
+              </li>
+              <li className="navbar-item no-touch">
+              <Link to="/">Streaming <span style={{fontSize: 10}}>Coming Soon!</span></Link>
+              </li>
+              {/* <li className="navbar-item">
+                <Link to="/about">Contact</Link>
+              </li> */}
+            </ul>
+          </li>
         </ul>
       </nav>
       <div className="mobile-drop-down-wrapper">

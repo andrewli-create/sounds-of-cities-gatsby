@@ -39,7 +39,7 @@ export const IndexPageTemplate = ({
       {/* <AnimatedBG/> */}
       <div className="first-section main-background">
         <div className="landing-gradient"></div>
-        <img src={albumnImg}/>
+        <img src={albumnImg} alt="album art image"/>
         <div data-aos='fade-up' className="landing-hero image-cover" style={{backgroundImage: `url(${heroImage.images.fallback.src})`}}></div>
         <section className="after-hero" data-aos='fade-up'>
             <Link className="hero-listen" to="/composition">Listen</Link>
